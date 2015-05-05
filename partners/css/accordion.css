@@ -1,0 +1,153 @@
+/*
+
+Accordion title i.e. Texas etc.  --  Notes at:  http://foundation.zurb.com/docs/components/accordion.html  
+
+I believe I found an animation script as well to make this interact smoothly.
+See this URL: http://foundation.zurb.com/forum/posts/743-accordions---how-do-you-animate-opening-and-closing-content
+
+Look for "Steven McCoy's" answer - worth a try
+
+*/
+.accordion .accordion-navigation > a, .accordion dd > a {
+	display: block;
+	color: #74b943;
+	font-family: "source-sans-pro", Helvetica, Arial, sans-serif !important;
+	font-size: 1.5em;
+	font-weight: 600;
+	padding: 0.88889rem 1.2rem;
+	background-color: #fbf9f9;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(251, 249, 249)),to(rgb(240, 235, 235)));
+	background-image: -webkit-linear-gradient(top, rgb(251, 249, 249), rgb(240, 235, 235));
+	background-image: -moz-linear-gradient(top, rgb(251, 249, 249), rgb(240, 235, 235));
+	background-image: -o-linear-gradient(top, rgb(251, 249, 249), rgb(240, 235, 235));
+	background-image: -ms-linear-gradient(top, rgb(251, 249, 249), rgb(240, 235, 235));
+	background-image: linear-gradient(top, rgb(251, 249, 249), rgb(240, 235, 235));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#fbf9f9', EndColorStr='#f0ebeb');
+}
+
+.accordion h4 {
+	white-space:nowrap;
+	color:#1e5e8c;
+}
+.accordion h4 a{
+	color:#1e5e8c;
+}
+.accordion {
+	color:#b5b5b5;
+	font-size:1em;
+	font-weight:bold;
+}
+.collapse-accordion, .expand-accordion {
+	color: #9B9B9B;
+	font-size: .75rem;
+	font-weight:bold;
+	margin-top: 8px;
+}
+dl.accordion dd.accordion-navigation.active a div.expand-accordion{
+	display:none;
+}
+dl.accordion dd.accordion-navigation a div.collapse-accordion	{
+		display:none;
+}
+dl.accordion dd.accordion-navigation.active a div.collapse-accordion{
+	display:block;
+}
+.accordion-navigation .accordion-arrow-holder {
+	background-color:#81c155;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+	 border-radius: 50%;
+	color:#fff;
+	height:25px;
+	margin-left: 10px;
+	width:25px;
+}
+
+.accordion-navigation .arrow-right-accordion{
+	border-top:8px solid transparent;
+	border-bottom:8px solid transparent;
+	border-left:8px solid #fff;
+	display:inline-block;
+	height:0;	
+	margin: 5px 0 0 10px;
+	width:0;
+}
+.accordion-navigation .arrow-down-accordion{
+	border-left:8px solid transparent;
+	border-right:8px solid transparent;
+	border-top:8px solid #fff;
+	display:inline-block;
+	height:0;
+	margin: 10px 0 0 5px;
+	width:0;
+}
+
+/* 
+
+** Accordion Expand and Collapse text
+	font-size: .75rem;
+	color: #9B9B9B;
+
+
+** Accordion content **
+--------------------------------------------------------------
+
+** Individual Locations can be h4 tags **
+color: #174977;
+
+border-bottom: 1px solid #D9D9D9; 
+
+
+** Footer **
+--------------------------------------------------------------
+
+---- Footer Top Container ----
+	background-color: #F5F5F5;
+
+
+	- Column borders (just spelling it out here use shorthand of course)
+	border-color: #D9D9D9;
+	border-width: 1px;
+
+	- Footer menu titles
+		font-size: 0.875rem
+		color: #174977;
+
+	- Top Footer text
+		font-size: .75rem;
+		color: #9B9B9B;
+
+---- Footer Bottom Container ----
+	background-color: #174977;	
+
+	- Connect text
+		font-size: 1.375rem;
+		color: #5F85A7;
+
+	- Bottom Footer text
+		font-size: .75rem;
+		color: #5F85A7;
+
+
+- Footer social icons - 30px x 30px each (I exported as 2x for hi ppi screens)
+
+
+Font sizes cheet sheet: Aproximatley
+rembase: 100% = 16px
+--------------------------------------------------------------
+* body { font-size: 100%; font-size: 1rem; line-height: 1; }
+* 4px    	0.25rem
+* 8px		0.5rem
+* 12px		0.75rem
+* 14px		0.875rem
+* 16px		1rem
+* 18px		1.125rem
+* 20px		1.25rem
+* 22px		1.375rem
+* 24px		1.5rem
+* 32px		2rem
+* 36px		2.25rem
+* 48px		3rem
+* 64px		4rem
+* 72px		4.5rem
+
+  */

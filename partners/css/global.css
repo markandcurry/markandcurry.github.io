@@ -2321,8 +2321,8 @@ table tr td {
 	color:#009cbe;
 }
 .sidebar-module {
-	padding:20px 26px;
-	margin-bottom:26px;
+	padding:1em;
+	margin-bottom:1.5em;
 }
 .sidebar-module img {
 	margin-bottom:22px;
@@ -2376,6 +2376,9 @@ table tr td {
 	background:url(../img/updates_bg.png) no-repeat center;
 	height:509px;
 	padding-top: 50px;
+}
+.updatesSection hr {
+	margin-top:0;
 }
 .homepage-hero {
 	background:url(../img/homepage_hereo.png) no-repeat center;
@@ -2518,8 +2521,8 @@ table tr td {
 	padding:18px 18px 10px 18px;
 	margin-bottom:18px;
 }
-.shots {
-	margin-bottom:28px;
+.1emTall {
+	height:1em;
 }
 .marginTop30 {
 	margin-top:30px;
@@ -2533,6 +2536,14 @@ table tr td {
 }*/
 .marginTopMinus50 {
 	margin-top:-50px;
+}
+.dad {
+	position:relative;
+}
+.bottomOfDiv {
+	position:absolute;
+	bottom:0;
+	left:0;
 }
 }
 @media only screen {
@@ -2598,5 +2609,21 @@ table tr td {
   position: relative;
   top: 50%;
   transform: translateY(-50%);	
+}
+.updatesSection img {
+	margin-bottom:1em;
+}
+.updatesSection {
+		background:url(../img/updates_bg.png) no-repeat center;
+}
+.tagline {
+	text-align:center;
+}
+.sidebar-module {
+	padding:1em;
+	margin-bottom:1.5em;
+}
+.button {
+	width:100%;
 }
 } 

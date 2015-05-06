@@ -24,56 +24,58 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
 }
 h1 {
-	font-size:46px;
+	font-size:2em;
 	font-weight:bold;
-	margin-bottom:32px;
+	margin-bottom:1em;
 }
 h2 {
-	font-size:36px;
+	font-size:1.5em;
+	margin-top:1.5em;
 }
 h2.topMargin {
 	margin-top:36px;
 }
 h3 {
-	font-size:24px;
+	font-size:1.25em;
 	font-weight:bold;
+	margin-top:1em;
 }
 h3.topMargin {
 	margin-top:24px;
 }
 h4 {
-	font-size:24px;
+	font-size:1.25em;
 }
 h5 {
-	font-size:20px;
+	font-size:1.1em;
 	font-weight:bold;
 }
 .entry h2 {
 	margin-bottom: 1rem;
 }
 p {
-	font-size:18px;
-	line-height:24px;
+	font-size:1em;
+	line-height:1.25em;
 }
 .largeparagraph {
-	font-size:24px;
-	line-height:30px;
+	font-size:1.5em;
+	line-height:1.75em;
 }
 .smallparagraph {
-	font-size:15px;
-	line-height:19px;
+	font-size:.75em;
+	line-height:1em;
 }
 .tinysmall {
-	font-size:14px;
-	line-height:14px;
+	font-size:.6em;
+	line-height:.75em;
 }
 .tiny {
-	font-size:12px;
-	line-height:14px;
+	font-size:.5em;
+	line-height:.6em;
 }
 li {
-	font-size:16px;
-	line-height:38px;
+	font-size:.9em;
+	line-height:1.75em;
 }
 ul.sym {
 	margin-left: 3rem;
@@ -186,10 +188,10 @@ button.tiny, .button.tiny {
 
 /*  Header #2  */
 #mobileheader {
-	padding: 2em 2.5em 0.5em 7em;
+	padding: 1em 2.5em 0.5em 7em;
 	position: fixed;
 	z-index: 10;
-	background: rgba(255,255,255,.9);
+	background: #003f54;
 }
 #globalheader {
 	background:url(../img/globalheader_bg.jpg) repeat-x;
@@ -509,8 +511,7 @@ img.alignleft {
 	background-image: radial-gradient(50% 200%, rgb(254, 253, 253), rgb(240, 240, 240));
 	overflow: hidden; */
 	background:url(../img/hero_bg.png) no-repeat left;
-	/*height:328px;*/
-	height:inherit;
+	height:328px;
 	}
 .hero2 {
 	background:url(../img/hero2.png) no-repeat center;
@@ -631,7 +632,7 @@ margin: 0;
 }
 .hero .promo {
 	position: relative;
-	padding-top:48px;
+	padding-top:2em;
 }
 .hero .promo1{
 	background: url(../img/promo1.png) no-repeat right;
@@ -1068,6 +1069,7 @@ footer h4 {
 	display: inline-block;
 	font-weight: 500;
 	vertical-align: middle;
+	margin-right:.5em;
 }
 footer p {
 	font-size: .8em;
@@ -1077,7 +1079,8 @@ footer p {
 footer.bluefooter {
 	background-color:#003f54;
 	color:#009cbe;
-	height:60px;
+	height:inherit;
+	padding:2em 0 0 0;
 }
 footer.bluefooter a{
 	color:#009cbe;
@@ -1097,7 +1100,7 @@ footer.bluefooter .bluefooterlinks a {
 }
 .social {
 	display: inline-block;
-	margin-right: 10px;
+	margin-right: .5em;
 }
 .social div {
 	width: 30px;
@@ -2161,19 +2164,19 @@ ul.attributes li:after {
 
 /* subfooter across all pages */
 .subfooter {
-	background:url(../img/subfooter_bg.jpg) repeat-x;
+	background:url(../img/subfooter_bg.jpg) repeat-x #0088a8;
 	color:#fff;
     font-weight: 500;
     line-height: 1.4em;
-	height:262px;
-	padding-top:44px;
+	height:inherit;
+	padding-top:1em;
 }
 .subfooter .brand, .subfooter .tagline, .subfooter p {
-	margin-bottom:32px;
+	margin-bottom:1.5em;
 }
 .subfooter .subfooter-text {
-	font-size:13px;
-	line-height:19px;
+	font-size:1em;
+	line-height:1em;
 }
 .subfooter a {
 	color:#abacab;
@@ -2192,9 +2195,10 @@ ul.attributes li:after {
 	font-size:15px;
 	line-height:19px;
 	text-transform:uppercase;
-	border-left:1px solid #fff;
 }
-
+.leftBorderWhite {
+		border-left:1px solid #fff;
+}
 /* #5 Owl Carousel */
 
 .owl-theme .owl-controls .owl-buttons .owl-prev{
@@ -2313,14 +2317,8 @@ table tr td {
 		bottom: 0;
 		position: absolute;
 	}
-.special p, .special h2 {
+.special {
 	color:#009cbe;
-}
-.special h2 {
-	margin-bottom:22px;
-}
-.special p {
-	margin-bottom:26px;
 }
 .sidebar-module {
 	padding:20px 26px;
@@ -2345,6 +2343,7 @@ table tr td {
 .sidebar-module h2 {
 	font-size:30px;
 	font-weight:normal;
+	margin-top:.5em;
 }
 .sidebar-module select {
 		background:url(../img/homepage_hero_callout_select.png) #fff right no-repeat;
@@ -2381,44 +2380,59 @@ table tr td {
 .homepage-hero {
 	background:url(../img/homepage_hereo.png) no-repeat center;
 	height:592px;
+	position:relative;
 }
-.homepage-hero-callout {
+.homepage-hero header {
 	background:url(../img/homepage_hero_callout.png) no-repeat;
 	color:#fff;
-	width:358px;
 }
-.homepage-hero-callout h1 {
+.homepage-hero header h1 {
 	color:#fff;
-	font-size:60px;
-	line-height:63px;
+	font-size:3em;
+	margin:.5em 0;
 }
-.homepage-hero-callout p {
-	font-size:18px;
-	line-height:22px;
-	margin-bottom:32px;
+.homepage-hero header p {
+	font-size:1em;
+	line-height:1.2em;
+	margin-bottom:1.5em;
 }
-.homepage-hero-callout form .select-container select {
+.homepage-hero header form .select-container select {
 	background:url(../img/homepage_hero_callout_select.png) #fff right no-repeat;
-	height:63px;
+	height:3em;
 	 -webkit-appearance: none;       
      -moz-appearance: none;    
      appearance: none;
-	 font-size:21px;
+	 font-size:1.2em;
 }
-.homepage-hero-callout form select {
+.homepage-hero header form select {
     border: none;
     box-shadow: none;
     background: transparent;
     background-image: none;
 	}
-.hero .homepage-alert {
+.alert-container {
+	position:absolute;
+	bottom:0;
+	left:0;
+	text-align:center;
+}
+.homepage-alert {
 	background: #b62f3e;
 	color:#fff;
 	height:64px;
 	font-size:16px;
-	padding-top:24px;
+	padding-top:1.1em;
+	margin:0 auto;
 }
 .homepage-alert a {
+	color:#fff;
+	text-decoration:underline;
+}
+.hero #careers {
+	background:url(../../../partners/img/careers-desktop.jpg) no-repeat;
+	height:328px;
+}
+.home page-alert a {
 	color:#fff;
 	text-decoration:underline;
 }
@@ -2443,13 +2457,18 @@ table tr td {
 }
 .homepage-review-box {
    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
-    margin-bottom: 32px;
-    margin-top: 295px;
-    padding: 18px;
+	margin-bottom: 1.5em;
+    margin-top: 18em;
+    padding: 1em;
 	  }
 .inner-review-box {
-	padding:14px;
 	background:#fff;
+	color: #000;
+    padding: 1em;
+}
+.homepage-hero header .inner-review-box p {
+	font-size:.8em;
+	margin-top:.3em;
 }
 .inner-review-box a {
 	text-decoration:underline;
@@ -2471,35 +2490,20 @@ table tr td {
 .fullWidth {
 	width:100%;
 }
-.careersBottom .row {
-	padding-top:24px;
+.careersBottom .row div {
+	margin-top:1em;
 }
-.careersBottom #gettoknowus {
-	background:url(../img/gettoknowus.jpg) no-repeat #fff 0% 10%;
-	background-size:contain;
+.careersBottom img {
+	width:100%;
 }
-.careersBottom #benefits {
-	background:url(../img/benefits.jpg) no-repeat #fff 0% 10%;
-	background-size:contain;
+.careersBottom h3, .careersBottom p {
+	margin:1em;
 }
-.careersBottom #locationsb {
-	background:url(../img/locations.jpg) no-repeat #fff 0% 10%;
-	background-size:contain;
+.careersBottom p {
+	font-size:.85em;
 }
-.careersBottom #worklife {
-	background:url(../img/worklife.jpg) no-repeat #fff 0% 10%;
-	background-size:contain;
-}
-.careersBottom #physicians {
-	background:url(../img/physicians.jpg) no-repeat #fff 0% 10%;
-	background-size:contain;
-}
-.careersBottom #aboutpartnersuc {
-	background: url(../img/about_partners_uc.jpg) no-repeat #fff 0% 10%;
-	background-size:contain;
-}
-.careersBottom h3 {
-	margin-bottom:150px;
+.careersBottom .bgWhite {
+	padding:.25em 0;
 }
 .chevron-li li {
 	list-style-image:url(../img/Shape_1_copy_14.png);
@@ -2524,8 +2528,11 @@ table tr td {
 	padding:20px;
 	margin-top:30px;
 }
-.paddingTop24 {
+/*.paddingTop24 {
 	padding-top:24px;
+}*/
+.marginTopMinus50 {
+	margin-top:-50px;
 }
 }
 @media only screen and (max-device-width:480px) {

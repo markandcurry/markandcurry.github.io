@@ -2419,9 +2419,9 @@ table tr td {
 .homepage-alert {
 	background: #b62f3e;
 	color:#fff;
-	height:64px;
-	font-size:16px;
-	padding-top:1.1em;
+	height:inherit;
+	font-size:.9em;
+	padding:1em 0;
 	margin:0 auto;
 }
 .homepage-alert a {
@@ -2535,44 +2535,68 @@ table tr td {
 	margin-top:-50px;
 }
 }
-@media only screen and (max-device-width:480px) {
-	.content {
-	padding-top: 6.75em;
+@media only screen {
 	}
-	.home .hero {
-		padding: 0;
-	}
-	.home .hero header {
-		z-index: 2;
-	}
-	.home .hero header h1 {
-		font-size:24px;
-	}
-	h1 {
-		font-size:24px;
+	.homepage-alert {
+	background: #b62f3e;
+	color:#fff;
+	height:inherit;
+	font-size:.9em;
+	padding:1em 0;
 }
-	.home .hero .promo img {
-		position: absolute;
-		right: 102px;
-		bottom: 0;
-		z-index: 1;
-		max-height: none;
-		opacity: 1;
-		width: 33%;
-		margin-bottom: 0;
+	.homepage-alert a{
+		color:#fff;
+		text-decoration:underline;
+		font-weight:bold;
 	}
-	.home .hero #search {
-		margin-bottom: 20px;
+.bgGreen {
+	background:#006c8c;
+	color:#fff;
+}
+.bgGreen h2 {
+	color:#fff;
+}
+.bgGray {
+	background:#efefef;
+}
+.bgBlue {
+	background:#004960;
+	color:#fff;
+}
+.bgBlue h1 {
+	color:#fff;
+}
+.bgWhite {
+	background:#fff;
+}
+.homepage-hero header form .select-container select {
+	background:url(../img/homepage_hero_callout_select.png) #fff right no-repeat;
+	height:3em;
+	 -webkit-appearance: none;       
+     -moz-appearance: none;    
+     appearance: none;
+	 font-size:1em;
+}
+.homepage-hero header form select {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
 	}
-	.cta-location .button {
-		font-size: 1.435em;
-		padding: .8rem 2rem .8em 2rem;
-		margin-bottom: 0;
-	}
-	.news #news-updates h5 {
-		margin-right: 44px;
-	}
-	[class*="block-grid-"]>li .panel {
-		margin-bottom: 0;
-	}
+.homepage-about-us .ring {
+	background:url(../img/rings.png) no-repeat center;
+	height:116px;
+	width:116px;
+	margin:0 auto;
+}
+.homepage-about-us .ring:hover {
+	background:url(../img/rings_hover.png) no-repeat center;
+	height:116px;
+	width:116px;
+}
+.homepage-about-us .ring img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);	
+}
 } 

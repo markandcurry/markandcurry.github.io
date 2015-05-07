@@ -2380,6 +2380,9 @@ table tr td {
 .updatesSection hr {
 	margin-top:0;
 }
+.updatesSection .bgWhite {
+	margin-bottom:1em;
+}
 .homepage-hero {
 	background:url(../img/homepage_hereo.png) no-repeat center;
 	height:592px;
@@ -2626,4 +2629,8 @@ table tr td {
 .button {
 	width:100%;
 }
+.updatesSection .bgWhite {
+	margin-bottom:1em;
+}
+
 } 

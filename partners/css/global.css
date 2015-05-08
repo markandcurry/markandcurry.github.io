@@ -2399,8 +2399,8 @@ table tr td {
 	height:592px;
 	position:relative;
 }
-.homepage-hero header {
-	background:url(../img/homepage_hero_callout.png) no-repeat;
+.homepage-hero .homepage-hero-callout {
+	background:url(../img/homepage_hero_callout.png);
 	color:#fff;
 }
 .homepage-hero header h1 {
@@ -2568,6 +2568,12 @@ table tr td {
 .1emPadding {
 	padding:1em;
 }
+.15emTopMargin {
+	margin-top:1.5em;
+}
+.15emTopPadding {
+	padding-top:1.5em;
+}
 }
 @media only screen {
 	}
@@ -2651,6 +2657,10 @@ table tr td {
 }
 .updatesSection .bgWhite {
 	margin-bottom:1em;
+}
+.homepage-hero .homepage-hero-callout {
+	background:url(../img/homepage_hero_callout.png);
+	color:#fff;
 }
 
 } 

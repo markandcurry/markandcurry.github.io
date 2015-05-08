@@ -510,7 +510,7 @@ img.alignleft {
 	background-image: -ms-radial-gradient(50% 200%, rgb(254, 253, 253), rgb(240, 240, 240));
 	background-image: radial-gradient(50% 200%, rgb(254, 253, 253), rgb(240, 240, 240));
 	overflow: hidden; */
-	background:url(../img/hero_bg.png) no-repeat left;
+	background:url(../img/hero_bg.jpg) no-repeat left;
 	height:328px;
 	}
 .hero2 {
@@ -2334,14 +2334,25 @@ table tr td {
 .sidebar-module.bgGreen, .sidebar-module.bgGreen h2 {
 	color:#fff;
 }
+.sidebar-module h2.location {
+	background:url(../img/location_icon.png) left no-repeat;
+	padding-left:1em;
+}
+.sidebar-module h2.briefcase {
+	background:url(../img/briefcase_icon.png) left no-repeat;
+	padding-left:1em;
+}
 .sidebar-module.bgGray, .sidebar-module.bgGray h3 {
 	color:#585858;
+}
+.sidebar-module.bgBlue form {
+	margin-top:1em;
 }
 .sidebar-module a {
 	font-weight:bold;
 }
 .sidebar-module h2 {
-	font-size:30px;
+	font-size: 1.8em;
 	font-weight:normal;
 	margin-top:.5em;
 }
@@ -2435,7 +2446,7 @@ table tr td {
 	text-decoration:underline;
 }
 .hero #careers {
-	background:url(../../../partners/img/careers-desktop.jpg) no-repeat;
+	background:url(../img/careers_image.png) no-repeat right;
 	height:328px;
 }
 .home page-alert a {
@@ -2547,6 +2558,15 @@ table tr td {
 	position:absolute;
 	bottom:0;
 	left:0;
+}
+.slick-slider {
+	margin-top:1.5em;
+}
+.slider-image img {
+	margin-top:2em;
+}
+.1emPadding {
+	padding:1em;
 }
 }
 @media only screen {

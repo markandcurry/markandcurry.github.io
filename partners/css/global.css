@@ -1074,7 +1074,7 @@ margin: 0;
 /*  footer  */
 footer {
 }
-footer h4 {
+footer h4, footer h5 {
 	display: inline-block;
 	font-weight: 500;
 	vertical-align: middle;

@@ -476,9 +476,10 @@ img.alignleft {
 	float: left;
 	margin: 0 18px 18px 0;
 }
-.hero {
+/*.hero {
 	padding: 0 2em;
 }
+*/
 .entry,
 .presentation,
 .cta {
@@ -640,7 +641,7 @@ margin: 0;
 }
 .hero .promo {
 	position: relative;
-	padding-top:1em;
+	padding-top:2em;
 }
 .hero .promo1{
 	background: url(../img/promo1.png) no-repeat right;

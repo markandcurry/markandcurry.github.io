@@ -2653,9 +2653,6 @@ table tr td {
 .updatesSection {
 		background:url(../img/updates_bg.png) no-repeat center;
 }
-.tagline {
-	text-align:center;
-}
 .sidebar-module {
 	padding:1em;
 	margin-bottom:1.5em;
@@ -2673,7 +2670,17 @@ table tr td {
 .hero3 {
 	background:url(../img/hero3.png) no-repeat right;
 }
-/*.content .row p, .content .row h2, .content .row h3  {
+.1emMargin {
+	margin:1em;
+}
+.mainBody {
+	margin:0 auto;
+	width:90%;
+}
+/*.mainBody p, .mainBody h2, .mainBody h3, .mainBody li {
+	margin:1em;
+}
+.content .row p, .content .row h2, .content .row h3  {
 	margin:1em;
 }
 .content .row li  {

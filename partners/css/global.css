@@ -74,7 +74,7 @@ p {
 	line-height:.6em;
 }
 li {
-	font-size:.9em;
+	font-size:1em;
 	line-height:1.75em;
 }
 ul.sym {
@@ -200,7 +200,7 @@ button.tiny, .button.tiny {
 	color:#fff;
 }
 .tagline, .brand {
-	font-size:22px;
+	font-size:1.2em;
 }
 #globalheader .tagline, #globalheader .brand {
 	margin-bottom:1.2rem;

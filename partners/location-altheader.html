@@ -23,6 +23,10 @@
 		<!-- Tooltips -->
 		<link rel="stylesheet" type="text/css" href="css/tooltip-classic.css" />
 		
+		<!-- Slick Slider -->        
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
 		<script src="js/vendor/modernizr.js"></script>
 		<script src="//use.typekit.net/bug8tpp.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>	
@@ -65,7 +69,7 @@
 			</div>
 			<button class="menu-button hide-for-large-up hide-for-medium-up" id="open-button">Open Menu</button>
 			<header id="mobileheader" class="contain-to-grid hide-for-large-up hide-for-medium-up">
-								<h4 itemprop="telephone" class="text-right"><a href="tel:8889800505">888-980-0505</a></h4>
+								<h4 itemprop="telephone" class="text-right"><a href="tel:8889800505">888.980.0505</a></h4>
 			</header>
 			<div class="content-wrap">
 				<div class="content">
@@ -81,7 +85,7 @@
 						</div>
                         <div class="large-3 columns show-for-large-up show-for-medium-up">
 							<div id="site-search">
-								<h4 itemprop="telephone"><a href="tel:8889800505">888-980-0505</a></h4>
+								<h4 itemprop="telephone"><a href="tel:8889800505">888.980.0505</a></h4>
 							</div>
                         </div>
                    </div>
@@ -99,7 +103,7 @@
 								    		</ul>
 								    	</li>
 								    	<li><a href="careers.html">CAREERS</a></li>
-								    	<li><a href="location-altheader.html">LOCATION EXAMPLE</a></li>
+								    	<li><a href="location-altheader.html" class="active">LOCATION EXAMPLE</a></li>
 								    	<li><a href="what-we-treat.html">WHAT WE TREAT</a></li>
 							    	</ul>
                                 </div>
@@ -130,7 +134,11 @@
                                         <span class="aqua"><strong>NOW OPEN</strong></span><br>
                                         <p>328 Washington St, Brookline, MA 02109<br>
                                         (Corner of Washington Street & Water Street)</p>
+                                        <div class="row">
+                                        <div class="large-8 columns">
                                         <a href="#" class="button">Get Directions&nbsp;&nbsp;</a>
+                                        </div>
+                                        </div>
                                         <p class="smallparagraph"><a href="#">See All Locations ></a></p>
                                         <p>Call for an appointment:<br>
                                         <span itemprop="telephone"><a href="tel:6174445555">(617) 444-5555</a></span><br>
@@ -155,7 +163,7 @@
 				    </div>
 				    <div class="row">
 						<div class="small-12 medium-12 large-6 columns">
-                            <ul>	
+                            <ul class="blue-chevron-li">	
                                 <li>Bladder Infection Treatment</li>
                                 <li>Flu Treatment</li>
                                 <li>Hepatitis B Vaccine</li>
@@ -166,9 +174,14 @@
                                 <li>Bladder Infection Treatment</li>
                                 <li>Flu Treatment</li>
                             </ul>
+                                        <div class="row">
+                                        <div class="large-10 columns">
+                                        <a href="#" class="button">See All Treatments&nbsp;&nbsp;</a>
+                                        </div>
+                                        </div>
 						</div>
 						<div class="small-12 medium-12 large-6 columns">	
-                            <ul>	
+                            <ul class="blue-chevron-li">	
                                 <li>Bladder Infection Treatment</li>
                                 <li>Flu Treatment</li>
                                 <li>Hepatitis B Vaccine</li>
@@ -186,12 +199,25 @@
                 <div class="large-4 columns" id="sidebar"><!-- right column -->
                 <section>
                 <div class="row">
-                	<div class="sidebar-module bgGreen">
+                	<div class="sidebar-module bgGreen columns">
                     <h2>Center Photos</h2>
-                        <div class="text-center">
-                        <img src="img/center_photo.png" alt="center photos" height="193" width="299">
-                        <img src="img/locations_sidebar_selector.png" height="12" width="84">
-                        </div>                    
+                        <div class="slick-slider">
+                            <div class="slider-image text-center">
+                                <img src="img/center_photo.png" alt="center photos">
+                        	</div>
+                            <div class="slider-image">
+                                <img src="img/center_photo.png" alt="center photos" height="193" width="299">
+                        	</div>
+                            <div class="slider-image">
+                                <img src="img/center_photo.png" alt="center photos" height="193" width="299">
+                        	</div>
+                            <div class="slider-image">
+                                <img src="img/center_photo.png" alt="center photos" height="193" width="299">
+                        	</div>
+                            <div class="slider-image">
+                                <img src="img/center_photo.png" alt="center photos" height="193" width="299">
+                        	</div>
+                        </div>
                     </div>
                 </div>
                 </section>
@@ -229,139 +255,6 @@
                 </section>
                 </div><!-- end right column -->
                 </div><!-- end row -->
-                <section class="contain-to-grid">
-                	<div class="row">
-                    	<div class="large-12 paddingTop24 columns">
-                        <h3>Types of Injuries We Treat</h3>
-                        <hr />
-                            <div class="row">
-                                <div class="large-4 columns">
-                                <p>Strains<br>
-We provide treatment for a wide range of injuries and illnesses for adults and children over 12 months of age</p>
-                                </div>
-                                <div class="large-4 columns">
-                                <p>Strains<br>
-We provide treatment for a wide range of injuries and illnesses for adults and children over 12 months of age</p>
-                                </div>
-                                <div class="large-4 columns">
-                                <p>Strains<br>
-We provide treatment for a wide range of injuries and illnesses for adults and children over 12 months of age</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-4 columns">
-                                <p>Sprains<br>
-We provide treatment for a wide range of injuries and illnesses for adults and children over 12 months of age</p>
-                                </div>
-                                <div class="large-4 columns">
-                                <p>Sprains<br>
-We provide treatment for a wide range of injuries and illnesses for adults and children over 12 months of age</p>
-                                </div>
-                                <div class="large-4 columns">
-                                <p>Sprains<br>
-We provide treatment for a wide range of injuries and illnesses for adults and children over 12 months of age</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-4 columns">
-                                <p>Breaks<br>
-We provide treatment for a wide range of injuries and illnesses for adults and children over 12 months of age</p>
-                                </div>
-                                <div class="large-4 columns">
-                                <p>Breaks<br>
-We provide treatment for a wide range of injuries and illnesses for adults and children over 12 months of age</p>
-                                </div>
-                                <div class="large-4 columns">
-                                <p>Breaks<br>
-We provide treatment for a wide range of injuries and illnesses for adults and children over 12 months of age</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="contain-to-grid">
-                	<div class="row">
-                    	<div class="large-12 paddingTop24 small-10 small-offset-1 large-offset-0">
-                        <h3>Vaccines, Tests and Preventative Care</h3>
-                        <hr />
-                        <div class="row">
-                        	<div class="large-4 columns">
-                                <ul class="chevron-li">
-                                <li><a href="#">Meningitis Vaccine</a></li>
-                                <li><a href="#">Flu shots</a></li>
-                                <li><a href="#">Pertussis/Whooping Cough</a></li>
-                                <li><a href="#">Tetanus</a></li>
-                                <li><a href="#">Human Papillomavirus (HPV)</a></li>
-                                <li><a href="#">Pneumococcal</a></li>
-                                <li><a href="#">Hepatitis B</a></li>
-                                </ul>
-                            </div>
-                        	<div class="large-4 columns">
-                                <ul class="chevron-li">
-                                <li><a href="#">Meningitis Vaccine</a></li>
-                                <li><a href="#">Flu shots</a></li>
-                                <li><a href="#">Pertussis/Whooping Cough</a></li>
-                                <li><a href="#">Tetanus</a></li>
-                                <li><a href="#">Human Papillomavirus (HPV)</a></li>
-                                <li><a href="#">Pneumococcal</a></li>
-                                <li><a href="#">Hepatitis B</a></li>
-                                </ul>
-                            </div>
-                        	<div class="large-4 columns">
-                                <ul class="chevron-li">
-                                <li><a href="#">Meningitis Vaccine</a></li>
-                                <li><a href="#">Flu shots</a></li>
-                                <li><a href="#">Pertussis/Whooping Cough</a></li>
-                                <li><a href="#">Tetanus</a></li>
-                                <li><a href="#">Human Papillomavirus (HPV)</a></li>
-                                <li><a href="#">Pneumococcal</a></li>
-                                <li><a href="#">Hepatitis B</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="contain-to-grid">
-                	<div class="row">
-                    	<div class="large-12 paddingTop24 small-10 small-offset-1 large-offset-0">
-                        <h3>Other Health Care Services</h3>
-                        <hr />
-                        <div class="row">
-                        	<div class="large-4 columns">
-                                <ul class="chevron-li">
-                                <li><a href="#">Digital X-rays</a></li>
-                                <li><a href="#">Splinting</a></li>
-                                <li><a href="#">Stitches</a></li>
-                                <li><a href="#">Lab Tests</a></li>
-                                <li><a href="#">Drug Tests</a></li>
-                                <li><a href="#">PPD/TB Skin Test</a></li>
-                                </ul>
-                            </div>
-                        	<div class="large-4 columns">
-                                <ul class="chevron-li">
-                                <li><a href="#">Digital X-rays</a></li>
-                                <li><a href="#">Splinting</a></li>
-                                <li><a href="#">Stitches</a></li>
-                                <li><a href="#">Lab Tests</a></li>
-                                <li><a href="#">Drug Tests</a></li>
-                                <li><a href="#">PPD/TB Skin Test</a></li>
-                                </ul>
-                            </div>
-                        	<div class="large-4 columns">
-                                <ul class="chevron-li">
-                                <li><a href="#">Digital X-rays</a></li>
-                                <li><a href="#">Splinting</a></li>
-                                <li><a href="#">Stitches</a></li>
-                                <li><a href="#">Lab Tests</a></li>
-                                <li><a href="#">Drug Tests</a></li>
-                                <li><a href="#">PPD/TB Skin Test</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </section>
                 <section class="contain-to-grid updatesSection">
                 	<div class="row">
                     	<div class="large-12 columns">
@@ -492,6 +385,7 @@ We provide treatment for a wide range of injuries and illnesses for adults and c
 				<script src="js/main.js"></script>
 				<script src="js/modalEffects.js"></script>
                 <script src="js/foundation/foundation.accordion.js"></script>
+				<script type="text/javascript" src="slick/slick.min.js"></script>
 				<!-- for the blur effect -->
 				<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
 				<script>
@@ -501,6 +395,18 @@ We provide treatment for a wide range of injuries and illnesses for adults and c
 				<script src="js/cssParser.js"></script>
 				<script>
 				  $(document).foundation();
+				</script>
+                
+                <!-- slider settings -->
+                <script type="text/javascript">
+				$('.slick-slider').slick({
+					  dots: true,
+					  infinite: false,
+					  arrows: false,
+					  speed: 300,
+					  slidesToShow: 1,
+					  slidesToScroll: 1
+					});
 				</script>
 				
 			</div>

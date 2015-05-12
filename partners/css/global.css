@@ -75,7 +75,7 @@ p {
 }
 li {
 	font-size:1em;
-	line-height:1.75em;
+	line-height:2em;
 }
 ul.sym {
 	margin-left: 3rem;
@@ -107,7 +107,9 @@ a {
 a:hover {
 	color:#009cbe;
 }
-
+.boldBlue strong {
+	color:#009cbe;
+}
 
 /*  Links  */
 button, .button, 
@@ -281,7 +283,7 @@ button.tiny, .button.tiny {
 #globalheader .top-bar .top-bar-section .has-dropdown .dropdown:after, 
 #globalheader .top-bar .top-bar-section .has-dropdown .dropdown:before {
 	bottom: 100%;
-	left: 10%;
+	left: 50%;
 	border: solid transparent;
 	content: " ";
 	height: 0;
@@ -1119,7 +1121,7 @@ footer.bluefooter .bluefooterlinks a {
 	padding:6px;
 }
 .social div:hover {
-	background-color:#efd316;
+	background-color:#e0e0e0;
 }
 footer ul.attributes,
 ul.attributes {
@@ -2277,6 +2279,10 @@ table tr td {
 	border:1px solid #f2f2f2;
 }
 
+.top-bar .top-bar-section. ul li.active a {
+	color:#2a8a18;	
+}
+
 @media only screen and (max-width: 50em) {
 	.home .hero .promo img {
 		position: absolute;
@@ -2329,6 +2335,9 @@ table tr td {
 .special {
 	color:#009cbe;
 }
+h2.special {
+	font-weight:bold;
+}
 .sidebar-module {
 	padding:1em;
 	margin-bottom:1.5em;
@@ -2366,15 +2375,16 @@ table tr td {
 	margin-top:.5em;
 }
 .sidebar-module select {
-		background:url(../img/homepage_hero_callout_select.png) #fff right no-repeat;
-	height:63px;
+		background:url(../img/chevron-down.png) #fff 95% 50% no-repeat;
 	 -webkit-appearance: none;       
      -moz-appearance: none;    
      appearance: none;
-	 font-size:21px;
-}
- input#s {
-	font-size:21px;
+	font-size: 1em;
+    height: 2.5em;
+	}
+ .sidebar-module input {
+	font-size:1em;
+	height:2.5em;
 }
 .bgGreen {
 	background:#006c8c;
@@ -2534,6 +2544,9 @@ table tr td {
 .chevron-li li {
 	list-style-image:url(../img/Shape_1_copy_14.png);
 }
+.blue-chevron-li li {
+	list-style-image: url(../img/blue_chevron.png);
+}
 .topPadding {
 	padding-top:1rem;
 }
@@ -2582,6 +2595,9 @@ table tr td {
 }
 .15emTopPadding {
 	padding-top:1.5em;
+}
+.sidebar-module .slick-slider {
+	margin:0 1.25em 1.25em 1.25em;
 }
 }
 @media only screen {
@@ -2678,6 +2694,10 @@ table tr td {
 	margin:0 auto;
 	width:90%;
 }
+.aqua {
+	color:#009cbe;
+}
+
 /*.mainBody p, .mainBody h2, .mainBody h3, .mainBody li {
 	margin:1em;
 }

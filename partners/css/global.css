@@ -2605,6 +2605,13 @@ h2.special {
 .sidebar-module .slick-slider {
 	margin:0 1.25em 1.25em 1.25em;
 }
+.1emBottomMargin {
+	margin-bottom:1em;
+}
+.15emBottomMargin {
+	margin-bottom:1.5em;
+}
+
 }
 @media only screen {
 	}
@@ -2723,7 +2730,6 @@ h2.special {
 .blue-chevron-li li {
 	list-style-image: url(../img/blue_chevron.png);
 }
-
 /*.mainBody p, .mainBody h2, .mainBody h3, .mainBody li {
 	margin:1em;
 }

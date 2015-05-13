@@ -2570,6 +2570,9 @@ h2.special {
 /*.paddingTop24 {
 	padding-top:24px;
 }*/
+.marginTop15 {
+	margin-top:1.5em;
+}
 .marginTopMinus50 {
 	margin-top:-50px;
 }

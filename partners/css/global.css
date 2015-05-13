@@ -14,7 +14,7 @@
 /*	Typography #1  */
 body,
 h1, h2, h3, h4, h5, h6, p, button, .button {
-	font-family: Frutiger, Helvetica, Arial, sans-serif;
+	font-family:"Frutiger LT Std 45 Light", Helvetica, Arial, sans-serif;
 	font-weight: 300; 
 }
 body {
@@ -2403,9 +2403,9 @@ h2.special {
 	height:928px;
 }
 .updatesSection {
-	background:url(../img/updates_bg.png) no-repeat center;
+	background:url(../img/updates_bg.png) no-repeat center top;
 	height:509px;
-	padding-top: 50px;
+	padding-top: 2em;
 }
 .updatesSection hr {
 	margin-top:0;
@@ -2418,7 +2418,7 @@ h2.special {
 	height:592px;
 	position:relative;
 }
-.homepage-hero .homepage-hero-callout {
+.homepage-hero-callout {
 	background:url(../img/homepage_hero_callout.png);
 	color:#fff;
 }
@@ -2516,12 +2516,15 @@ h2.special {
 }
 .homepage-locations h2 {
 	color:#fff;
+	margin-top:4em;
+	margin-bottom:2em;
 }
 .centeredmargin {
 	margin:0 auto;
 }
 .whiteBorder {
 	border:1px solid #fff;
+	margin:1em;
 }
 .fullWidth {
 	width:100%;
@@ -2624,6 +2627,9 @@ h2.special {
 .bgGreen h2 {
 	color:#fff;
 }
+.bgGreen a {
+	color:#fff;
+}
 .bgGray {
 	background:#efefef;
 }
@@ -2671,7 +2677,7 @@ h2.special {
 	margin-bottom:1em;
 }
 .updatesSection {
-		background:url(../img/updates_bg.png) no-repeat center;
+		background:url(../img/updates_bg.png) repeat-y center top;
 }
 .sidebar-module {
 	padding:1em;
@@ -2683,12 +2689,15 @@ h2.special {
 .updatesSection .bgWhite {
 	margin-bottom:1em;
 }
-.homepage-hero .homepage-hero-callout {
+.homepage-hero-callout {
 	background:url(../img/homepage_hero_callout.png);
 	color:#fff;
 }
+.homepage-hero-callout .bgWhite {
+	color:#000;
+}
 .hero3 {
-	background:url(../img/hero3.png) no-repeat right;
+	-webkit-only-background:url(../img/hero3.png) no-repeat right;
 }
 .1emMargin {
 	margin:1em;
@@ -2700,7 +2709,21 @@ h2.special {
 .aqua {
 	color:#009cbe;
 }
-#mobileheader
+.whiteBorder {
+	border:1px solid #fff;
+	text-transform:uppercase;
+	font-size:.8em;
+}
+.small-only-extraMargin {
+	margin:1em 0;
+}
+.chevron-li li {
+	list-style-image:url(../img/Shape_1_copy_14.png);
+}
+.blue-chevron-li li {
+	list-style-image: url(../img/blue_chevron.png);
+}
+
 /*.mainBody p, .mainBody h2, .mainBody h3, .mainBody li {
 	margin:1em;
 }

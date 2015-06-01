@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#search-help #query {
+  display: inline-block !important;
+  margin: 0 -2% 0 0;
+  width: 90% !important;
+  height: 50px;
+  background-color: #F5F5F5;
+  border:0;
+}
+#search-help input[type=submit] {
+  display: inline-block;
+  width: 10% !important;
+  margin: 0;
+  height: 50px;
+  background-color: #e27212;
+  -webkit-box-shadow: inset 0 0 35px rgba(24,29,34,.25);
+     -moz-box-shadow: inset 0 0 35px rgba(24,29,34,.25);
+      -ms-box-shadow: inset 0 0 35px rgba(24,29,34,.25);
+          box-shadow: inset 0 0 35px rgba(24,29,34,.25);
+  border-width: 0px;
+  border-radius: 0;
+}  
+input[type="submit"] {
+    border-color: transparent;
+    color: #fff;
+    transition: opacity 300ms ease 0s;
+}
+ul {
+	list-style-position:inside;
+}
+.search-result-link {
+	font-weight:bold;
+}
+.search-result-meta {
+	font-size:.7em;
+}
+.search-result div {
+	margin-left:1em;
+	clear:both;
+}
+.search-result {
+	margin-bottom:1em;
+}
+h2.subtitle {margin:1em 0 .5em 0;}

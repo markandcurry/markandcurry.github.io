@@ -43,4 +43,12 @@ ul {
 .search-result {
 	margin-bottom:1em;
 }
-h2.subtitle {margin:1em 0 .5em 0;}
+h2.subtitle {
+	margin:1em 0 .5em 0;
+	}
+.search-result-meta, .article-meta, .article-vote-count, .please-sign-in {
+	color:#ccc;
+}
+.comment-list {
+	list-style-type:none;
+}

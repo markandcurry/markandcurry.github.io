@@ -52,3 +52,35 @@ h2.subtitle {
 .comment-list {
 	list-style-type:none;
 }
+#channels {
+	margin-top:2em;
+}
+#channels .button {
+    width: 100%;
+}
+.button {
+    box-shadow: 0 0 35px rgba(122, 122, 122, 0.25) inset;
+}
+.button.white {
+    background-color: #fff;
+    color: #004668 !important;
+    font-weight: 700 !important;
+}
+.button.white:hover {
+    background-color: #e27212;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.tiny {
+	font-size:.75em;
+}
+.community {
+	background:#f9f9f9;
+	margin-top:3em;
+}
+.community h3 {
+	margin-top:1em;
+}
+.community .tiny {
+	margin-top:3em;
+}

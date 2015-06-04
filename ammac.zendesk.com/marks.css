@@ -46,7 +46,7 @@ ul {
 h2.subtitle {
 	margin:1em 0 .5em 0;
 	}
-.search-result-meta, .article-meta, .article-vote-count, .please-sign-in {
+.search-result-meta, .article-meta, .article-vote-count, .please-sign-in, .see-all-articles {
 	color:#ccc;
 }
 .comment-list {
@@ -82,5 +82,21 @@ h2.subtitle {
 	margin-top:1em;
 }
 .community .tiny {
+	margin-top:3em;
+}
+/*  get started page */
+div[id="get-started"] h1 {
+    color: #f23a2c !important;
+}
+div[id="get-started"] .catSprite {
+    background: rgba(0, 0, 0, 0) url("https://p4.zdassets.com/hc/theme_assets/543582/200025705/catSprite.png") no-repeat scroll left top / 140px 140px;
+    display: inline-block;
+    height: 70px;
+    margin-bottom: -24px;
+    margin-left: 0;
+    margin-right: 10px;
+    width: 70px;
+}
+#get-started .row {
 	margin-top:3em;
 }

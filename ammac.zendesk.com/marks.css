@@ -98,7 +98,7 @@ div[id="get-started"] .catSprite {
     margin-right: 10px;
     width: 70px;
 }
-#get-started .row, #get-loans-done .row {
+#get-started .row, #get-loans-done .row, #get-organized .row {
 	margin-top:3em;
 }
 /* get-loans-done.html */ 
@@ -112,6 +112,20 @@ div[id="get-loans-done"] .catSprite {
     height: 70px;
     margin-bottom: -20px;
     margin-left: -17px;
+    margin-right: 10px;
+    width: 70px;
+}
+/* get-organized.html */
+div[id="get-organized"] h1 {
+    color: #00b4b4 !important;
+	margin-top:1em;
+}
+div[id="get-organized"] .catSprite {
+    background: rgba(0, 0, 0, 0) url("https://p4.zdassets.com/hc/theme_assets/543582/200025705/catSprite.png") no-repeat scroll left bottom / 140px 140px;
+    display: inline-block;
+    height: 70px;
+    margin-bottom: -24px;
+    margin-left: 0;
     margin-right: 10px;
     width: 70px;
 }

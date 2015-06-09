@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font: 12pt Helvetica, "Times New Roman", Times, serif;
+	line-height: 1.3;
+	}
+a {
+	color:#000;
+}
+article {
+	page-break-after:always;
+}
+h1 {
+	font-size: 24pt;
+	}
+h2 {
+	font-size: 14pt;
+	margin-top: 25px;
+	}
+header img, #showRelease1Rest, #hideRelease1rest, #showRelease2Rest, #hiderelease2Rest, #release1ButtonContainer, #release2ButtonContainer {
+	display:none;
+	}
+header:after {
+	content: "www.clearcapital.com";
+	}
+#sidebar h2 {
+	font-size: 18pt;
+	}
+.tab-content {
+	display:block;
+}

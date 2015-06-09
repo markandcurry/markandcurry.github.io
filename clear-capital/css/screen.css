@@ -1,37 +1,32 @@
 @charset "UTF-8";
 /* CSS Document */
+/* General Elements */
 html {
+	*
 }
 body {
-	background:url(img/bg-body.gif) #DBDBDB repeat;
-	padding:0;
+	background:url(../img/bg-body.gif) #e4e4e4 repeat-x;
+	font-family: Helvetica;
 	margin:0;
+	padding:0;
 	text-align:center;
 }
 a {
 	color:#44687d;
 }
-#main {
+
+/* header */
+header {
 	margin:0 auto;
 	width: 911px;
-	background-color: #ffffff;
-	text-align:center;
-	}
-header {
-	width: 911px;
 	height: 60px;
+	background:rgb(255, 255, 255);
+	background:rgba(255, 255, 255, 0.25);
 }
-.headeroverlay {
-	width:968px;
-	background:rgb(252, 177, 22);
-	background:rgba(252, 177, 22, 0.5);
-	border-bottom:1px solid #b2c2cc;
-	border-top:1px solid #9fafba;
-	margin-left:-57px;
-	padding-left:57px;
-}
-h1 {
-	font-family: Helvetica;
+header h1 {
+	float:left;
+	clear:right;
+	margin: 20px 10px 0;
 	color: #888888;
 	font-size: 24px;
 	font-weight: 700;
@@ -42,40 +37,48 @@ header h2 {
 	color: #888888;
 	font-size: 18px;
 	line-height: 18px;
-}
-.floatleft {
 	float:left;
+	clear:right;
+	margin: 24px 0 0 250px;
 }
-.floatright {
-	float:right;
+header img {
+	float:left;
+	clear:right;
+	margin:10px 10px 10px 0;
 }
-.text-right {
-	text-align:right;
+.headeroverlay {
+	background:rgb(252, 177, 22);
+	background:rgba(252, 177, 22, 0.5);
+	border-bottom:1px solid #b2c2cc;
+	border-top:1px solid #9fafba;
 }
-.textleft {
-	text-align:left;
-}
+
+/*main content */
+#main {
+	margin:0 auto;
+	width: 911px;
+	background-color: #ffffff;
+	text-align:center;
+	padding-bottom:9px;
+	}
 #content {
 	text-align:left;
 	float:left;
 	clear:both;
 }
 #content h2 {
-	font-family: Helvetica;
 	color: #44687d;
 	font-size: 24px;
 	font-weight: 400;
-	line-height: 18px;
+	line-height: 26px;
 }
 #content h4 {
-	font-family: Helvetica;
 	color: #8b8b8b;
 	font-size: 14px;
 	line-height: 18px;
 	font-style: italic;
 }
 #content p {
-	font-family: Helvetica;
 	color: #5a5a5a;
 	font-size: 12px;
 	line-height: 18px;
@@ -84,47 +87,60 @@ header h2 {
 #content strong {
 	font-weight:700;
 }
+
 .button {
 	background:url(../img/button.gif) top;
-	font-family: Helvetica;
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: 700;
-	width: 208px;
-	height: 31px;
-	position:
+	width: 198px;
+	height: 21px;
+	padding:10px 0 0 10px;
+	margin-right:20px;
 }
 .button:hover {
 	background:url(../img/button.gif) bottom;
+	cursor:pointer;
 }
 .releases {
 	width:610px;
-	}
-.releases > div {
-		padding-left:10px;
-}
-.noBottomMargin {
-	margin-bottom:0;
-	padding-bottom:0;
-}
-.noTopMargin {
-	margin-top:0;
-	padding-top:0;
+	display:table;
 }
 .calendar {
+	background:url(../img/icon-calendar.gif) top;
+	margin-right:10px;
 	width: 31px;
 	height: 28px;
 	float:left;
 	clear:right;
 }
-#release1 .calendar {
+.current .calendar {
 	background:url(../img/icon-calendar.gif) bottom;
 }
-#release2 .calendar {
-	background:url(../img/icon-calendar.gif) top;
+.current .calendar .new{
+	background:url(../img/icon-new.png);
+	width: 36px;
+	height: 25px;
+	transform: scale(0.7,0.7);
 }
-.release {
+#release1Rest, #release2Rest {
+	display:none;
 }
+.tab-content {
+	/*display: none;*/
+	display:table-footer-group; 
+	background-color:#f8f8f8;}
+.tab-content.current {
+	/*display: inherit;*/
+	display:table-header-group; 
+	background-color:#fff;}
+.tab-content > p, .tab-content > div {
+	margin-left:10px;
+	margin-right:10px;
+}
+
+
+
 #sidebar {
 	width: 250px;
 	background-color: #f5f5f5;
@@ -132,16 +148,15 @@ header h2 {
 	border:1px solid #d5dfe3;
 	text-align:left;
 	margin-right:9px;
+	margin-bottom:20px;
 }
 #sidebar h2 {
-	font-family: Helvetica;
 	color: #5e5e5e;
 	font-size: 14px;
 	font-weight: 700;
-	margin:10px;
+	margin:12px;
 }
 #sidebar p {
-	font-family: Helvetica;
 	color: #44687d;
 	font-size: 14px;
 	font-weight: 400;
@@ -152,18 +167,20 @@ header h2 {
     margin-left: -41px;
 }
 #sidebar ul li {
-	font-family: Helvetica;
 	color: #44687d;
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 30px;
-	list-style-image:url(../img/icon-bullet.gif);
+	list-style-type:none;
 	list-style-position:inside;
-	padding-left:10px;
+	padding-left:24px;
 	margin-right:10px;
 }
-#sidebar ul li.active {
-	list-style-image:url(../img/icon-bullet-active.gif);
+#sidebar ul li:hover {
+	cursor:pointer;
+	text-decoration:underline;
+}
+#sidebar ul li.current {
 	background:#fff;
 	border:1px solid #d5dfe3;
 	border-left:none;
@@ -171,19 +188,30 @@ header h2 {
 #sidebar ul li a {
 	text-decoration:none;
 }
-/* something like the below example is possible, but not very clean *
 #sidebar li:before {
     background:url(../img/icon-bullet.gif) no-repeat;
+	background-position:top;
     width:13px;
     height:13px;
     display:block;
     position:absolute;
     content: " ";
-} */
+	margin:7px -18px;
+} 
+#sidebar li.current:before {
+    background:url(../img/icon-bullet.gif) no-repeat;
+	background-position:bottom;
+    width:13px;
+    height:13px;
+    display:block;
+    position:absolute;
+    content: " ";
+} 
+
+/*footer */ 
 #disclaimer {
 	width: 891px;
 	background-color: #f6f6f6;
-	font-family: Helvetica;
 	color: #878787;
 	font-size: 12px;
 	font-weight: 400;
@@ -196,9 +224,28 @@ header h2 {
 #disclaimer p {
 	margin:12px;
 }
-#release1Rest, #release2Rest {
-	display:none;
+
+.20clear {
+	height:20px;
+	clear:both;
 }
-.hidden {
-	display:none;
+.floatleft {
+	float:left;
+}
+.floatright {
+	float:right;
+}
+.noBottomMargin {
+	margin-bottom:0;
+	padding-bottom:0;
+}
+.noTopMargin {
+	margin-top:0;
+	padding-top:0;
+}
+.text-right {
+	text-align:right;
+}
+.textleft {
+	text-align:left;
 }

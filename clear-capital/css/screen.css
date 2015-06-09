@@ -65,6 +65,7 @@ header img {
 	text-align:left;
 	float:left;
 	clear:both;
+	margin-bottom:20px;
 }
 #content h2 {
 	color: #44687d;
@@ -223,7 +224,7 @@ header img {
 	border:1px solid #d2d6da;
 	clear:both;
 	text-align:left;
-	margin:9px;
+	margin:20px 9px 9px 9px;
 }
 #disclaimer p {
 	margin:12px;

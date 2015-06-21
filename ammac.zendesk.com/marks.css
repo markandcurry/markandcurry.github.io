@@ -221,3 +221,48 @@ h1 {
 .article-body table p {
 	margin:1em 0;
 }
+
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+.pagination {
+  line-height: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.pagination ul {
+  display: inline-block;
+  list-style: none;
+}
+
+.pagination li {
+  float: left;
+  border: 1px solid #ECECEC;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.pagination li + li {
+  border-left: none;
+}
+
+.pagination a, .pagination span {
+  display: inline-block;
+  line-height: 20px;
+  font-size: 12px;
+  padding: 5px 12px;
+}
+
+.pagination-current {
+  background-color: #f6f6f6;
+  background-color: rgba(0, 0, 0, 0.03);
+  color: #AAA;
+}
+
+.pagination-first {
+  border-radius: 3px 0 0 3px;
+}
+
+.pagination-last {
+  border-radius: 0 3px 3px 0;
+}

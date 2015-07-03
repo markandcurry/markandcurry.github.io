@@ -266,3 +266,14 @@ h1 {
 .pagination-last {
   border-radius: 0 3px 3px 0;
 }
+
+blockquote, blockquote p {
+	color:#000;
+}
+
+.section-tree .section {
+    display: inline-block;
+    padding: 0 50px 50px 0;
+    vertical-align: top;
+    width: 49.5%;
+}

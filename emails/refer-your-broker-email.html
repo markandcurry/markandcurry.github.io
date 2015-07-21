@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+  <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+  <title>AmMAC</title> <!-- the <title> tag shows on email notifications on Android 4.4. -->
+  <style type="text/css">
+
+    /* ensure that clients don't add any padding or spaces around the email design and allow us to style emails for the entire width of the preview pane */
+    body,
+    #bodyTable {
+      height:100% !important;
+      width:100% !important;
+      margin:0;
+      padding:0;
+    }
+    
+    /* Ensures Webkit- and Windows-based clients don't automatically resize the email text. */
+    body,
+    table,
+    td,
+    p,
+    a,
+    li,
+    blockquote {
+      -ms-text-size-adjust:100% !important;
+      -webkit-text-size-adjust:100% !important;
+    }
+
+    /* Forces Yahoo! to display emails at full width */
+    .thread-item.expanded .thread-body .body,
+    .msg-body {
+      width: 100% !important;
+      display: block !important;
+    }
+
+    /* Forces Hotmail to display emails at full width */
+    .ReadMsgBody,
+    .ExternalClass {
+      width: 100% !important;
+      background-color: #f4f4f4 !important;
+    }
+
+    /* Forces Hotmail to display normal line spacing. */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height:100% !important;
+    }
+
+    /* Resolves webkit padding issue. */
+    table {
+      border-spacing:0 !important;
+      margin-bottom: 0 !important;
+    }
+
+    /* Resolves the Outlook 2007, 2010, and Gmail td padding issue, and removes spacing around tables that Outlook adds. */
+    table,
+    td {
+      border-collapse:collapse !important;
+      mso-table-lspace:0pt !important;
+      mso-table-rspace:0pt !important;
+    }
+    
+    /* Corrects the way Internet Explorer renders resized images in emails. */
+    img {
+      -ms-interpolation-mode: bicubic !important;
+    }
+    
+    /* Ensures images don't have borders or text-decorations applied to them by default. */
+    img,
+    a img {
+      border:0 !important;
+      outline:none !important;
+      text-decoration:none !important;
+    }
+
+    /* Styles Yahoo's auto-sensing link color and border */
+    .yshortcuts a {
+      border-bottom: none !important;
+    }
+    
+    /* Styles the tel URL scheme */
+    a[href^=tel],
+    .mobile_link,
+    .mobile_link a {
+      color:#222222 !important;
+      text-decoration: underline !important;
+    }
+  
+  
+    /* Apple Mail doesn't support max-width, so we use media queries to constrain the email container width. */
+    @media only screen and (min-width: 601px) {
+      .email-container {
+        width: 700px !important;
+        margin: auto !important;
+      }
+    }
+        @media only screen and (max-width: 479px)  {
+          td.full {
+            width: auto !important;
+            display: block !important;
+            padding-left: 20px !important;
+          }
+          #content-wrapper {
+            padding: 0 !important;
+          }
+          #logo {
+            padding: 0 0 0 20px !important;
+          }
+          #hello {
+            padding: 0 20px 0 20px !important;
+          }
+          #subhead, #date {
+            text-align: left;
+          }
+          #excerpt_a1, #excerpt_a2, #excerpt_a3,
+          #excerpt_b1, #excerpt_b2, #excerpt_b3,
+          #excerpt_c1, #excerpt_c2, #excerpt_c3,
+          #readmore_a1, #readmore_a2, #readmore_a3,
+          #readmore_b1, #readmore_b2, #readmore_b3,
+          #readmore_c1, #readmore_c2, #readmore_c3 {
+            font-size: 16px !important;
+            line-height: 20px !important;
+          }
+          #adv1, #adv2, #adv3 {padding: 10px 0 !important;}
+          #adv1 a img, #adv2 a img, #adv3 a img {max-width: 100%; height: auto;}
+        }
+          
+  </style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#ffffff" style="margin:0; padding:20px 0 0 0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none;">
+<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#ffffff" id="bodyTable" style="border-collapse: collapse;table-layout: fixed;margin:0 auto;"><tbody><tr><td>
+
+  <!-- Outlook and Lotus Notes don't support max-width but are always on desktop, so we can enforce a wide, fixed width view. -->
+  <!-- Beginning of Outlook-specific wrapper : BEGIN -->
+  <!--[if (gte mso 9)|(IE)]>
+  <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td>
+  <![endif]-->
+  <!-- Beginning of Outlook-specific wrapper : END -->
+
+  <!-- Email wrapper : BEGIN -->
+  <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="max-width: 700px;margin: auto;" class="email-container">
+          <tbody><tr>
+      <td>
+
+        <!-- Logo Left, Nav Right : BEGIN -->
+        <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+          <tbody><tr>
+            <td height="20" style="font-size: 0; line-height: 0;" colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td id="logo" valign="middle" style="padding-left: 0px;text-align: left;" colspan="2">
+                          <img src="http://blog.ammac.com/email/images/AmMAC_logo.png" alt="" width="260" height="39" border="0" style="display: block;-ms-interpolation-mode: bicubic !important;">
+            </td>
+          </tr>
+          <tr>
+            <td height="20" style="font-size: 0; line-height: 0;" colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="1" style="font-size: 0; line-height: 0;" bgcolor="#ddd" colspan="2">&nbsp;</td>
+          </tr>
+        </tbody></table>
+        <!-- Logo Left, Nav Right : END -->
+  
+        <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+      
+          <!-- Single Fluid Image, No Crop : END -->
+
+          <!-- Full Width, Fluid Column : BEGIN -->
+          <tbody><tr>
+            <td id="content-wrapper" style="padding: 0;">
+
+            <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+              <tbody>
+                  
+                <tr>
+                  <td valign="top" width="540px" style="padding: 20px 0px 20px 0px;" class="full">
+                    <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+                      <tbody>
+                        <tr>
+                          <td style="padding: 0 0 10px 0;font-family: sans-serif; font-style: normal;font-size: 22px; line-height: 24px; font-weight:bold; text-align: left;color:#39547a;text-decoration:none;">
+                            We do referrals too...refer your broker / owner today!
+                          </td>
+                        </tr>
+<tr>
+  <td>
+    <table border="0" width="100%" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td>
+            <table border="0" width="100%" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                <td style="padding:0 0 10px 0;font-family: sans-serif; font-size: 13px; line-height: 16px; color: #666666; text-align: left;">Why would you that? Well, we think AmMAC’s powerful new platform is a huge improvement over traditional wholesale lending processes. When your broker / owner sees how your company can...</td>
+                </tr>
+              <tr>
+                <td style="padding:0 0 10px 0;font-family: sans-serif; font-size: 13px; line-height: 16px; color: #666666; text-align: left;">
+                •  Instantly match loan products with your scenarios
+                </td>
+              </tr><tr>
+                <td style="padding:0 0 10px 0;font-family: sans-serif; font-size: 13px; line-height: 16px; color: #666666; text-align: left;">
+                •  Receive lightning-fast conditional approval
+                </td>
+              </tr><tr>
+                <td style="padding:0 0 10px 0;font-family: sans-serif; font-size: 13px; line-height: 16px; color: #666666; text-align: left;">
+                •  Clear conditions quickly, as they are submitted
+                </td>
+              </tr><tr>
+                <td style="padding:0 0 10px 0;font-family: sans-serif; font-size: 13px; line-height: 16px; color: #666666; text-align: left;">
+                •  Confidently communicate loan status every step of the way
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:0 0 10px 0;font-family: sans-serif; font-size: 13px; line-height: 16px; color: #666666; text-align: left;">
+                ...they are eternally grateful, and may even bring you one of those fancy coffee drinks you really like. 
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</td>
+<td>
+  <img src="http://blog.ammac.com/email/images/avatar-lisa-crop.jpg" width="100%" height="auto">
+</td>
+</tr>
+      <tr>
+        <td>
+        &nbsp;
+        </td>
+      </tr>
+        <tr>
+          <td style="padding: 0 0 10px 0;font-family: sans-serif; font-style: normal;font-size: 22px; line-height: 24px; font-weight:bold; text-align: left;color:#39547a;text-decoration:none;">
+            Forward this email to your broker / owner. Thanks!
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</td>
+                <td valign="top" width="160px" style="padding: 20px;" class="full" bgcolor="#f5f5f5">
+                  <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+                        <tbody>
+                          <tr>
+                            <td style="padding:0 0 10px 0;font-family: sans-serif; font-size: 16px; line-height: 18px; color: #39547a; text-align: left;font-weight:bold;" colspan="2">Spread the word!<br><br><span style="font-family:sans-serif; font-size: 13px; line-height: 16px; color: #666666; text-align: left; font-weight: normal;">We’ll send your broker / owner a quick note and copy you. Thanks!</span><br><br></td>
+                          </tr>
+                          <tr>
+                            <td style="padding:0 0 20px 0;" colspan="2">
+                              <img src="http://blog.ammac.com/email/images/progress1.png" alt="" width="150" height="15" border="0" style="display: block;-ms-interpolation-mode: bicubic !important;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td width="20%" style="padding:0 10px 10px 0;">
+                              <img src="http://blog.ammac.com/email/images/step1.png" alt="" width="40" height="auto" border="0" style="display: block;-ms-interpolation-mode: bicubic !important;">
+                            </td>
+                            <td width="80%" style="padding:0 0 10px 0;font-family:sans-serif; font-size: 16px; line-height: 18px; color: #00A75A; text-align: left; font-weight: bold;">
+                              Subscribed
+                            </td>
+                          </tr>
+                          <tr>
+                            <td width="20%" style="padding:0 10px 10px 0;">
+                              <img src="http://blog.ammac.com/email/images/step2.png" alt="" width="40" height="auto" border="0" style="display: block;-ms-interpolation-mode: bicubic !important;">
+                            </td>
+                            <td width="80%" style="padding:0 0 10px 0;font-family:sans-serif; font-size: 16px; line-height: 18px; color: #CACACA; text-align: left; font-weight: normal;">
+                              Registered
+                            </td>
+                          </tr>
+                          <tr>
+                            <td width="20%" style="padding:0 10px 10px 0;">
+                              <img src="http://blog.ammac.com/email/images/step3.png" alt="" width="40" height="auto" border="0" style="display: block;-ms-interpolation-mode: bicubic !important;">
+                            </td>
+                            <td width="80%" style="padding:0 0 10px 0;font-family:sans-serif; font-size: 16px; line-height: 18px; color: #CACACA; text-align: left; font-weight: normal;">
+                              Applied
+                            </td>
+                          </tr>
+                          <tr>
+                            <td width="20%" style="padding:0 10px 10px 0;">
+                              <img src="http://blog.ammac.com/email/images/step4.png" alt="" width="40" height="auto" border="0" style="display: block;-ms-interpolation-mode: bicubic !important;">
+                            </td>
+                            <td width="80%" style="padding:0 0 10px 0;font-family:sans-serif; font-size: 16px; line-height: 18px; color: #CACACA; text-align: left; font-weight: normal;">
+                              Approved
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+                          
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- 2 x 2 grid : BEGIN -->
+            <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" align="center">
+              <tbody><tr>
+                <td height="1" style="font-size: 0; line-height: 0;" bgcolor="#ddd" colspan="2">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="20" style="font-size: 0; line-height: 0;" colspan="2">&nbsp;</td>
+              </tr>
+                              <tr>
+                <td class="full" valign="middle" style="padding: 0; font-family: sans-serif; font-size: 10px; line-height: 16px; color: #A5A5A5; text-align: left;">For questions or support, please <a href="#" style="padding: 0; font-family: sans-serif; font-size: 10px; line-height: 16px; color: #39547a; text-align: left;text-decoration:none;">click here.</a><br><br>  
+
+                AmMAC is transforming the way loans are processed by providing a fast, competitively priced option for quality borrowers of jumbo non-agency loans. AmMAC HQ: 2015 Gateway Place, Suite 410. San Jose, CA 95110. AmMAC is an equal housing opportunity lender. Copyright 2015.
+                  
+                </td>
+              </tr>
+                              <tr>
+                <td height="20" style="font-size: 0; line-height: 0;" colspan="2">&nbsp;</td>
+              </tr>
+            </tbody></table>
+            <!-- 2 x 2 grid : END -->
+          </td>
+        </tr>
+
+          
+  <!-- Footer : END -->
+        <!-- Full Width, Fluid Column : END -->
+      
+      </tbody></table>
+    </td>
+  </tr>
+    <!-- Footer : BEGIN -->
+  
+  <tr>
+    <td style="text-align: center;padding: 20px 40px;font-family: sans-serif; font-size: 12px; line-height: 18px;color: #888888;">&nbsp;
+      
+    </td>
+  </tr>
+  
+  
+      
+</tbody></table>
+<!-- Email wrapper : END -->
+
+<!-- End of Outlook-specific wrapper : BEGIN -->
+<!--[if (gte mso 9)|(IE)]>
+    </td>
+  </tr>
+</table>
+<![endif]-->
+<!-- End of Outlook-specific wrapper : END -->
+
+</td></tr></tbody></table>
+
+</body>
+</html>

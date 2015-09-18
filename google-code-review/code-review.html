@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Code Review Sample</title>
+        <style>
+            body {
+                margin: 0;
+				text-align:center;
+            }
+
+            #carousel-container {
+                overflow: hidden;
+                width: 225px;
+				margin:0 auto;
+            }
+
+            #carousel {
+                margin: 0;
+                padding: 0;
+                position: relative;
+            }
+
+            .carousel-item {
+                display: inline-block;
+            }
+						
+			#carousel-dots-nav {
+				margin-left:-40px;
+			}
+			
+            .carousel-dots-nav-item {
+                cursor: pointer;
+                display: inline-block;
+                margin: 10px 20px;
+            }
+			
+			.title {
+				clear:both;
+			}
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script src="code-review.js"></script>
+    </head>
+    <body>
+        <div id="carousel-container">
+            <ol id="carousel"></ol>
+        </div>
+        <div id="dots-holder">
+        <ol id="carousel-dots-nav"></ol>
+        </div>
+        <a id="previous" href="#">Previous</a>
+        <a id="next" href="#">Next</a><br>
+        <span id="title"></span>
+    </body>
+</html>

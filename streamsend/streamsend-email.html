@@ -53,6 +53,7 @@ img {
   float: left; 
   clear: both; 
   display: block;
+  margin:10px 0;
 }
 
 center {
@@ -325,9 +326,9 @@ img.center {
 /* Typography */
 
 body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
-  color: #222222;
-  font-family: "Helvetica", "Arial", sans-serif; 
-  font-weight: normal; 
+	font-family: Arial;
+	color: #4c4c4e;
+	  font-weight: normal; 
   padding:0; 
   margin: 0;
   text-align: left; 
@@ -338,13 +339,16 @@ h1, h2, h3, h4, h5, h6 {
   word-break: normal;
 }
 
-h1 {font-size: 40px;}
+h1 {font-size: 20px;
+	font-weight: 400;
+	line-height: 52px;
+	text-transform:uppercase;}
 h2 {font-size: 36px;}
-h3 {font-size: 32px;}
+h3 {font-size: 16px; line-height:20px;}
 h4 {font-size: 28px;}
 h5 {font-size: 24px;}
 h6 {font-size: 20px;}
-body, table.body, p, td {font-size: 14px;line-height:19px;}
+body, table.body, p, td {font-size: 14px;line-height:20px;}
 
 p.lead, p.lede, p.leed {
   font-size: 18px;
@@ -420,12 +424,8 @@ h6 a:visited {
 
 /* Buttons */
 
-table.button,
-table.tiny-button,
-table.small-button,
-table.medium-button,
-table.large-button {
-  width: 100%;
+table.button {
+  width: 75%;
   overflow: hidden;
 }
 
@@ -446,57 +446,29 @@ table.large-button td {
 	background-image: -moz-linear-gradient(90deg, #f48109 0%, #f7a91f 88%, #f7ae22 98%);
 	background-image: -o-linear-gradient(90deg, #f48109 0%, #f7a91f 88%, #f7ae22 98%);
 	background-image: linear-gradient(0deg, #f48109 0%, #f7a91f 88%, #f7ae22 98%);
+	padding: 12px 0 11px;
+	margin:30px 10px;
 }
 
-table.tiny-button td {
-  padding: 5px 0 4px;
-}
+table.button td a {
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	}
 
-table.small-button td {
-  padding: 8px 0 7px;
-}
-
-table.medium-button td {
-  padding: 12px 0 10px;
-}
-
-table.large-button td {
-  padding: 21px 0 18px;
-}
-
-table.button td a,
-table.tiny-button td a,
-table.small-button td a,
-table.medium-button td a,
-table.large-button td a {
-  font-weight: bold;
-  text-decoration: none;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #ffffff;
-  font-size: 16px;
-}
-
-table.tiny-button td a {
-  font-size: 12px;
-  font-weight: normal;
-}
-
-table.small-button td a {
-  font-size: 16px;
-}
-
-table.medium-button td a {
-  font-size: 20px;
-}
-
-table.large-button td a {
-  font-size: 24px;
-}
 
 table.button:hover td,
 table.button:visited td,
 table.button:active td {
-  background: #2795b6 !important;
+  /*background: #2795b6 !important; */
+  
+  	background-image: -webkit-linear-gradient(90deg, #f7ae22 0%, #f7a91f 88%, #f48109 98%);
+	background-image: -moz-linear-gradient(90deg, #f7ae22 0%, #f7a91f 88%, #f48109 98%);
+	background-image: -o-linear-gradient(90deg, #f7ae22 0%, #f7a91f 88%, #f48109 98%);
+	background-image: linear-gradient(0deg, #f7ae22 0%, #f7a91f 88%, #f48109 98%);
+
 }
 
 table.button:hover td a,
@@ -505,29 +477,10 @@ table.button:active td a {
   color: #fff !important;
 }
 
-table.button:hover td,
-table.tiny-button:hover td,
-table.small-button:hover td,
-table.medium-button:hover td,
-table.large-button:hover td {
-  background: #2795b6 !important;
-}
 
 table.button:hover td a,
 table.button:active td a,
-table.button td a:visited,
-table.tiny-button:hover td a,
-table.tiny-button:active td a,
-table.tiny-button td a:visited,
-table.small-button:hover td a,
-table.small-button:active td a,
-table.small-button td a:visited,
-table.medium-button:hover td a,
-table.medium-button:active td a,
-table.medium-button td a:visited,
-table.large-button:hover td a,
-table.large-button:active td a,
-table.large-button td a:visited {
+table.button td a:visited {
   color: #ffffff !important; 
 }
 
@@ -733,7 +686,22 @@ body.outlook p {
       /*color: #ffffff;*/
       font-weight: bold;
       font-size: 11px;
+	  font-family: Arial;
+		color: #545658;
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 23.438px;
+		transform: scale(0.874,0.874);
     }
+	
+	.template-label .uppercase {
+		text-transform:uppercase;
+	}
+	
+	.callout {
+		margin-left:2.5%;
+		margin-right:2.5%;
+	}
 
     .callout .wrapper {
       padding-bottom: 20px;
@@ -741,10 +709,6 @@ body.outlook p {
 
     .callout .panel {
       border-color: #efefef;
-    }
-
-    .header {
-      background: #f6f6f6;
     }
 
     .footer .wrapper {
@@ -767,7 +731,102 @@ body.outlook p {
     table.columns .right-text-pad {
       padding-right: 10px;
     }
-
+	
+	/* My edits below */
+	
+	.header {
+		font-family: Arial;
+		color: #545658;
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 23.438px;
+		transform: scale(0.874,0.874);
+	}
+	
+	.uppercase {
+		text-transform:uppercase;
+	}
+	
+	.border {
+		border:1px solid #d1d3d4;
+		margin-top:20px;
+	}
+	
+	.border table td {
+		padding-top:10px;
+	}
+	
+	.borderbottom {
+		border-bottom:1px solid #d1d3d4;
+	}
+		
+	.vertical-middle {
+		vertical-align:middle;
+	}
+	
+	.text-right {
+		text-align:right;	
+	}
+	
+	.bold {
+		font-weight:700;
+	}
+	
+	.mobileonly {
+		display:none;
+	}
+	
+	.nobackground {
+		background:none;
+	}
+	
+	.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	} 
+	
+	.nav li {
+		display:inline;
+		margin:10px 46px 10px 10px;
+		font-family: Arial;
+		color: #4d4d4f;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+		transform: scale(1.011,1.011);
+		text-transform:uppercase;
+		width:100%;
+	}
+	
+	.nav li a {
+		color: #4d4d4f;
+	}
+	
+	.nav li.last-li {
+		margin:10px 0 10px 10px;	
+	}
+	
+	.lastp {
+		margin-bottom:30px;
+	}
+	
+	.header-left, .header-right {
+		height:80px;
+		vertical-align:middle;
+	}
+		
+	/* media queries */
+	@media (min-width:600px) {
+	
+		#ten-left-ten-right {
+		padding-left:10px;padding-right:10px;
+	}
+		#table {
+			width:540px; margin-left:10px; margin-right:10px;
+		}
+	}
+	
     @media only screen and (max-width: 600px) {
 
       table[class="body"] .right-text-pad {
@@ -777,8 +836,42 @@ body.outlook p {
       table[class="body"] .left-text-pad {
         padding-right: 10px !important;
       }
-    }
-
+	  
+		.mobileonly {
+			display:block;
+		}
+			
+		.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	} 
+	
+	.nav li {
+		display: list-item;
+	}
+	
+      table[class="body"] .columns td.nine,
+  table[class="body"] .column td.nine { width: 95% !important; }
+  
+  	.wrapper {
+		width:100% !important;
+	}
+  	.four img {
+		text-align:center;
+	}
+	
+	table.button {
+		width:300px;
+		margin-left:60px;
+	}
+	
+	.text-right {
+		text-align:left;
+	}
+			
+	
+	}
   </style>
 </head>
 <body>
@@ -786,78 +879,8 @@ body.outlook p {
     <tr>
       <td class="center" align="center" valign="top">
         <center>
-
-          <table class="row header">
-            <tr>
-              <td class="center" align="center">
-                <center>
-
-                  <table class="container">
-                    <tr>
-                      <td class="wrapper last">
-
-                        <table class="twelve columns">
-                          <tr>
-                            <td class="six sub-columns">
-                              LOGO HERE
-                            </td>
-                            <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <span class="template-label">Need help? call 1300 736 378
-free Australian delivery over $60</span>
-                            </td>
-                            <td class="expander"></td>
-                          </tr>
-                        </table>
-
-                      </td>
-                    </tr>
-                  </table>
-
-                </center>
-              </td>
-            </tr>
-          </table>
-
-          <table class="row header">
-            <tr>
-              <td class="center" align="center">
-                <center>
-
-                  <table class="container">
-                    <tr>
-                      <td class="wrapper last">
-
-                        <table class="twelve columns">
-                          <tr>
-                            <td class="three sub-columns">
-                              new arrivals
-                            </td>
-                            <td class="two sub-columns">
-                              tops
-                            </td>
-                            <td class="three sub-columns">
-                              bottoms
-                            </td>
-                            <td class="three sub-columns">
-                              knitwear
-                            </td>
-                            <td class="one sub-columns last">
-                              sale
-                            </td>
-                            <td class="expander"></td>
-                          </tr>
-                        </table>
-
-                      </td>
-                    </tr>
-                  </table>
-
-                </center>
-              </td>
-            </tr>
-          </table>
-
-          <table class="container">
+        
+          <table class="container mobileonly" style="background:none;">
             <tr>
               <td>
 
@@ -868,6 +891,84 @@ free Australian delivery over $60</span>
                       <table class="twelve columns">
                         <tr>
                           <td>
+                          text goes here for mobile display
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+			</td>
+            </tr>
+          </table>        
+
+
+
+          <table class="container">
+            <tr>
+              <td>
+
+                <table class="row borderbottom">
+                  <tr>
+                    <td class="wrapper">
+                        <table class="three columns">
+                          <tr>
+                            <td class="left-text-pad header-left">
+                              LOGO HERE
+                            </td>
+                            <td class="expander"></td>
+                          </tr>
+                        </table>
+                    </td>
+                      <td class="wrapper last">
+
+                        <table class="nine columns">
+                          <tr>
+                            <td class="nine columns text-right right-text-pad header-right">
+                              Need help? call <a xlink:href="tel:+13007363789">1300 736 3789</a><br />
+                                <span class="uppercase">free Australian delivery over $60</span>
+                            </td>
+                            <td class="expander"></td>
+                          </tr>
+                        </table>
+
+                      </td>
+                  </tr>
+                </table>
+
+                <table class="row borderbottom">
+                  <tr>
+                    <td class="wrapper last">
+
+                      <table class="twelve columns">
+                        <tr>
+                          <td>
+                            <ul class="nav">
+                            	<li><a xlink:href="#">New Arrivals</a></li>
+                                <li><a xlink:href="#">Tops</a></li>
+                                <li><a xlink:href="#">Bottoms</a></li>
+                                <li><a xlink:href="#">Knitwear</a></li>
+                                <li class="last-li"><a xlink:href="#">Sale</a></li>
+                            </ul>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+
+
+                <table class="row">
+                  <tr>
+                    <td class="wrapper last">
+
+                      <table class="twelve columns">
+                        <tr>
+                          <td class="text-pad">
                             <h1 class="center">Eye Grabbing Headline Goes Here!</h1>
                           </td>
                           <td class="expander"></td>
@@ -881,69 +982,97 @@ free Australian delivery over $60</span>
                 <table class="row">
                   <tr>
                     <td class="wrapper last">
-
                       <table class="twelve columns">
                         <tr>
-                          <td>
+                          <td class="text-pad">
                             <p>Hi There,</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
 
-                            <p>nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                            <p class="lastp">nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
                       </table>
+                    </td>
+                  </tr>
+                </table>
+                
 
+                <table class="row">
+                  <tr>
+                    <td class="last border">
+                      <table class="twelve columns" id="table">
+                        <tr class="borderbottom">
+                          <td class="four sub-column left-text-pad">
+                          <strong>Your Cart</strong>
+                          </td>
+                          <td class="six sub-column">
+                          <strong>Product</strong>
+                          </td>
+                          <td class="two sub-column text-right">
+                          <strong>Price</strong>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <tr class="borderbottom">
+                          <td class="four sub-column text-pad">
+                          <img src="http:///markandcurry.github.io/streamsend/img/product-image.jpg" height="130" width="173" alt="Product Image" />
+                          </td>
+                          <td class="six sub-column vertical-middle">
+                          Product Name or Heading
+                          </td>
+                          <td class="two sub-column vertical-middle text-right">
+                          <strong>$20.00</strong>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <tr>
+                          <td class="four sub-column text-pad">
+                          <img src="http:///markandcurry.github.io/streamsend/img/product-image.jpg" height="130" width="173" alt="Product Image" />
+                          </td>
+                          <td class="six sub-column vertical-middle">
+                          Product Name or Heading
+                          </td>
+                          <td class="two sub-column vertical-middle text-right">
+                          <strong>$20.00</strong>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
 
-                <table class="row callout">
+
+                <table class="row">
+                  <tr>
+                    <td class="wrapper last">
+                        <center>
+                            <table class="button">
+                              <tr>
+                                <td>
+                                  <a href="#">Continue Shopping</a>
+                                </td>
+                              </tr>
+                            </table>
+                        </center>
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="row">
                   <tr>
                     <td class="wrapper last">
 
                       <table class="twelve columns">
-                        <tr class="panel">
-                          <td class="five column">
-                          Your Cart
-                          </td>
-                          <td class="six column">
-                          Product
-                          </td>
-                          <td class="one column">
-                          Price
+                        <tr>
+                          <td class="left-text-pad">
+                          <h3>Recommended just for you</h3>
                           </td>
                           <td class="expander"></td>
                         </tr>
                       </table>
-                      <table class="twelve columns">
-                        <tr class="panel">
-                          <td class="five column">
-                          <img src="" height="130" width="173" alt="Product Image" />
-                          </td>
-                          <td class="six column">
-                          Product Name or Heading
-                          </td>
-                          <td class="one column">
-                          $20.00
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                      <table class="twelve columns">
-                        <tr class="panel">
-                          <td class="five column">
-                          <img src="" height="130" width="173" alt="Product Image" />
-                          </td>
-                          <td class="six column">
-                          Product Name or Heading
-                          </td>
-                          <td class="one column">
-                          $20.00
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
+
 
                     </td>
                   </tr>
@@ -951,74 +1080,42 @@ free Australian delivery over $60</span>
                 
                 <table class="row">
                   <tr>
-                    <td class="wrapper last">
+                    <td class="wrapper" style="text-align:center;">
 
-                      <table class="twelve columns">
+                      <table class="four columns">
                         <tr>
-                          <td class="one column">
-                          </td>
-                          <td class="ten column">
-                            <table class="large-button">
-                              <tr>
-                                <td>
-                                  <a href="#">Continue Shopping</a>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                          <td class="one column">
+                          <td class="left-text-pad">
+                          <img src="http:///markandcurry.github.io/streamsend/img/product-image.jpg" height="130" width="173" alt="Product Image" />
+                          <p>Product Name or Heading</p>
+                          <p><strong>$20.00</strong></p>
                           </td>
                           <td class="expander"></td>
                         </tr>
                       </table>
 
                     </td>
-                  </tr>
-                </table>
+                    <td class="wrapper">
 
-                <table class="row">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
+                      <table class="four columns">
                         <tr>
-                          <td>
-                          Recommended just for you
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                      <table class="twelve columns">
-                        <tr>
-                          <td class="four column">
-                          </td>
-                          <td class="four column">
-                          </td>
-                          <td class="four column">
+                          <td style="padding-left:10px">
+                          <img src="http:///markandcurry.github.io/streamsend/img/product-image.jpg" height="130" width="173" alt="Product Image" />
+                          <p>Product Name or Heading</p>
+                          <p><strong>$20.00</strong></p>
                           </td>
                           <td class="expander"></td>
                         </tr>
                       </table>
 
                     </td>
-                  </tr>
-                </table>
-
-
-                <table class="row">
-                  <tr>
                     <td class="wrapper last">
 
-                      <table class="twelve columns">
+                      <table class="four columns">
                         <tr>
-                          <td align="center">
-                            <center>
-                              <p style="text-align:center;">Now longer want to receive these emails? You can unsubscribe here<br />
-                                1234 Main Street, Sacramento, CA 95814<br />
-                                All Right Reserved @2015
-                                </p>
-                            </center>
+                          <td class="right-text-pad">
+                          <img src="http:///markandcurry.github.io/streamsend/img/product-image.jpg" height="130" width="173" alt="Product Image" />
+                          <p>Product Name or Heading</p>
+                          <p><strong>$20.00</strong></p>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -1032,6 +1129,39 @@ free Australian delivery over $60</span>
               </td>
             </tr>
           </table>
+
+          <table class="row">
+            <tr>
+              <td class="center" align="center">
+                <center>
+
+                  <table>
+                    <tr>
+                      <td class="wrapper last">
+
+                        <table class="twelve columns footer">
+                          <tr>
+                            <td>
+                            <center>
+                            No longer want to receive these emails? You can <a xlink:href="">unsubscribe here</a><br />
+                            1234 Main Street, Sacramento, CA 95814<br />
+                            All Right Reserved @2015
+                            </center>
+                            </td>
+                            <td class="expander"></td>
+                          </tr>
+                        </table>
+
+                      </td>
+                    </tr>
+                  </table>
+
+                </center>
+              </td>
+            </tr>
+          </table>
+          
+          
 
         </center>
       </td>
